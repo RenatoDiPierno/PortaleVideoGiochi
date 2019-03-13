@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PortaleVideoGiochi';
+
+
+  idChange: number = 0;
+
+  changeSection(id: number){
+    this.idChange=id;
+  }
+ 
 }

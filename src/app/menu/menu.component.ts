@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { AppComponent } from '../app.component';
+
 
 @Component({
   selector: 'app-menu',
@@ -12,4 +14,11 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
+  @Output('showSection')
+
+  showSectionEvent: EventEmitter<number> = new EventEmitter();
+ 
+  showList(id: number){
+    this.showSectionEvent.emit(id);
+  }
 }
