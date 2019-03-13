@@ -18,7 +18,7 @@ export class MenuComponent implements OnInit {
 
   showSectionEvent: EventEmitter<number> = new EventEmitter();
  
-  showList(id: number){
+  changeBody(id: number){
     this.showSectionEvent.emit(id);
   }
 }
