@@ -8,8 +8,13 @@ export class GameItem{
     Price: number;
     ExitYear: number;
 
+    constructor(name:string, Id: number){
+        this._Name=name;
+        this.Id=Id;
+    }
+
     get name(){
         return this._Name;
     }
-
+    
 }

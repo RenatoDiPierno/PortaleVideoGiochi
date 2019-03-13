@@ -1,5 +1,5 @@
-<div>
-    <button>Fifa19</button>
-    <button>Fifa18</button>
-    <button>Fifa17</button>
-</div>
+<ng-container *ngFor="let game of list">
+    <div>
+        {{game.name}}
+    </div>
+</ng-container>
