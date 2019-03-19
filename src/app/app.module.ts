@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { GameListComponent } from './game-list/game-list.component';
 import { GameDetailComponent } from './game-detail/game-detail.component';
 import { EditGameComponent } from './edit-game/edit-game.component';
+import { AppRoutingModule } from "./AppRoutingModule";
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { EditGameComponent } from './edit-game/edit-game.component';
     EditGameComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

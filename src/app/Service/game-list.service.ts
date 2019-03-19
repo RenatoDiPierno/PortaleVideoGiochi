@@ -10,10 +10,10 @@ export class GameListService {
     new GameItem('GTA V', 1),
     new GameItem('Call Of Duty', 2),
   ]
-  
+
   constructor() { }
 
-  getList(){
+  getList() {
     return this.listGame;
   }
 }

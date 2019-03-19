@@ -1,5 +1,9 @@
-export class MenuItem{
+export class MenuItem {
     Id: number;
-    Description: string;
-    Checked: boolean=false;
+    _Description: string;
+    Checked: boolean = false;
+
+    constructor(desciption: string) {
+        this._Description = desciption;
+    }
 }

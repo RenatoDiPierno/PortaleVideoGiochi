@@ -1,5 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { AppComponent } from '../app.component';
+import { MenuItem } from '../Obj/MenuItem';
+import { MenuService } from '../Service/menu.service';
 
 
 @Component({
@@ -9,16 +11,10 @@ import { AppComponent } from '../app.component';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private menuService: MenuService) { }
+  menu: MenuItem[];
 
   ngOnInit() {
-  }
-
-  @Output('showSection')
-
-  showSectionEvent: EventEmitter<number> = new EventEmitter();
- 
-  changeBody(id: number){
-    this.showSectionEvent.emit(id);
+    this.menu = this.menuService.getList();
   }
 }
