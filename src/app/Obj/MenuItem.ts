@@ -1,9 +1,12 @@
 export class MenuItem {
-    Id: number;
-    _Description: string;
-    Checked: boolean = false;
+    id: number;
+    description: string;
+    checked: boolean = false;
+    endpoint: string;
 
-    constructor(desciption: string) {
-        this._Description = desciption;
+    constructor(desciption: string, endpoint: string) {
+        this.description = desciption;
+        this.endpoint = endpoint;
+
     }
 }

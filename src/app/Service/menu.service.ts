@@ -7,10 +7,12 @@ import { MenuItem } from '../Obj/MenuItem';
 export class MenuService {
 
   listMenu: Array<MenuItem> = [
-    new MenuItem('Home'),
-    new MenuItem('Giochi'),
-    new MenuItem('Modifica'),
+    new MenuItem('Home', '/'+'home'),
+    new MenuItem('Giochi', '/'+'game-list'),
+    new MenuItem('Modifica', '/'+'edit-game'),
   ]
+
+
   constructor() { }
 
   getList() {

@@ -1,5 +1,5 @@
-<div class="HeaderBar">
-    {{menu}}
-    <button class="Button" (click)="changeBody(0)"> Home </button>
-    <button class="Button" (click)="changeBody(1)"> Game </button>
-</div>
+<ul class="header">
+    <li *ngFor="let item of menu; let i = index">
+        <a [routerLink]="[item.endpoint]" routerLinkActive="router-link-active" class="item{{i+1}}">{{item.description}}</a>
+    </li>
+</ul>

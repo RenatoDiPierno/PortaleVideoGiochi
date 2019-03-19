@@ -5,6 +5,11 @@ import { appRoutes } from './app.routing.module';
   imports: [
     RouterModule.forRoot(appRoutes)
   ],
+  exports: [
+    RouterModule
+  ],
+
 })
 export class AppRoutingModule {
+
 }
